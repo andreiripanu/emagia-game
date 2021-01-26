@@ -1,0 +1,26 @@
+{
+  "name": "arcsym/emagia-game",
+  "description": "Emagia game",
+  "keywords": ["emagia", "hero", "game", "test"],
+  "authors": [
+    {
+      "name": "Andrei Ripanu",
+      "email": "andrei.ripanu@arcsym.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.4.14"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": {
+      "*": "dist"
+    },
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "Arcsym\\Emagia\\": "src/"
+    }
+  }
+}
