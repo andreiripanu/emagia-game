@@ -1,0 +1,20 @@
+skills:
+  hero:
+    rapid_strike:
+      name: Rapid Strike
+      chance: 10
+      value: 2
+      action: attack
+      class_name: RapidStrikeSkill
+    magic_shield:
+      name: Magic Shield
+      chance: 20
+      value: 2
+      action: defend
+      class_name: MagicShieldSkill
+
+#  beast:
+#    name: Rapid Strike
+#    chance: 5
+#    value: 3
+#    class_name: RapidStrikeSkill
