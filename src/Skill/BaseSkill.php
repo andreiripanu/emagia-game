@@ -22,6 +22,11 @@ abstract class BaseSkill
    */
   protected int $value;
 
+  /**
+   * @var string
+   */
+  protected string $action;
+
 
   /**
    * @param string $name
@@ -63,10 +68,13 @@ abstract class BaseSkill
 
   /**
    * @param int $value
+   * @return $this
    */
-  public function setValue(int $value)
+  public function setValue(int $value): self
   {
     $this->value = $value;
+
+    return $this;
   }
 
   /**
@@ -78,10 +86,37 @@ abstract class BaseSkill
   }
 
   /**
+   * @param string $action
+   * @return $this
+   */
+  public function setAction(string $action): self
+  {
+    $this->action = $action;
+
+    return $this;
+  }
+
+  /**
+   * @return string
+   */
+  public function getAction(): string
+  {
+    return $this->action;
+  }
+
+  /**
    * @return bool
    */
   public function isUsed(): bool
   {
     return mt_rand(0, 100) <= $this->chance;
+  }
+
+  /**
+   * @return string
+   */
+  public function getClassName(): string
+  {
+    return static::class;
   }
 }
