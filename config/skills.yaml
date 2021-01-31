@@ -10,7 +10,7 @@ skills:
       name: Magic Shield
       chance: 20
       value: 2
-      action: defend
+      action: defence
       class_name: MagicShieldSkill
 
 #  beast:
