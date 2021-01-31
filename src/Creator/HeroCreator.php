@@ -35,7 +35,8 @@ final class HeroCreator implements CreatorInterface
       $hero->addSkill((new $className())
         ->setName($skill['name'])
         ->setChance($skill['chance'])
-        ->setValue($skill['value']))
+        ->setValue($skill['value'])
+        ->setAction($skill['action']))
       ;
     }
 
