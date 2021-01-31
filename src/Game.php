@@ -4,21 +4,29 @@ namespace Arcsym\Emagia;
 
 class Game
 {
+  /**
+   * @var Battle
+   */
   private Battle $battle;
 
 
-  public function __construct()
+  /**
+   * @param Battle $battle
+   */
+  public function __construct(Battle $battle)
   {
-    $this->battle = new Battle();
+    $this->battle = $battle;
   }
 
-  public function run()
+  /**
+   * Used to start the game.
+   */
+  public function start(): void
   {
     $this->battle->startBattle();
 
-    while($this->battle->nextTurn()) {
-      $this->battle->startTurn();
-      $this->battle->endTurn();
+    while ($this->battle->nextTurn()) {
+      $this->battle->playTurn();
     }
 
     $this->battle->endBattle();
