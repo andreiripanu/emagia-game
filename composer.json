@@ -1,7 +1,8 @@
 {
   "name": "arcsym/emagia-game",
-  "description": "Emagia game",
-  "keywords": ["emagia", "hero", "game", "test"],
+  "type": "project",
+  "description": "Emagia is a mini game where a hero fights with a beast. This was a task for an interview test at eMag.",
+  "keywords": ["emagia", "game", "interview test"],
   "authors": [
     {
       "name": "Andrei Ripanu",
@@ -9,7 +10,8 @@
     }
   ],
   "require": {
-    "php": ">=7.4.14"
+    "php": ">=7.4.14",
+    "symfony/yaml": "^5.2"
   },
   "config": {
     "optimize-autoloader": true,
