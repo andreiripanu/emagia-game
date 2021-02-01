@@ -1,4 +1,4 @@
-## Result 1
+## Result 3
 
 ```
 BATTLE START
