@@ -33,7 +33,7 @@ class BeastCharacterTest extends TestCase
     ;
   }
 
-  public function testAllGetters()
+  public function testAllGetters(): void
   {
     $this->assertEquals($this->stats['name'], $this->character->getName());
     $this->assertEquals($this->stats['health'], $this->character->getHealth());

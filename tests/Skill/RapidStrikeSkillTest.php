@@ -28,7 +28,7 @@ class RapidStrikeSkillTest extends TestCase
     ;
   }
 
-  public function testAllGetters()
+  public function testAllGetters(): void
   {
     $this->assertEquals($this->values['name'], $this->skill->getName());
     $this->assertEquals($this->values['value'], $this->skill->getValue());
@@ -36,12 +36,12 @@ class RapidStrikeSkillTest extends TestCase
     $this->assertEquals($this->values['action'], $this->skill->getAction());
   }
 
-  public function testSpecialDamage()
+  public function testSpecialDamage(): void
   {
     $this->assertEquals(80, $this->skill->specialDamage(40));
   }
 
-  public function testIsUsed()
+  public function testIsUsed(): void
   {
     $this->assertIsBool($this->skill->isUsed());
   }

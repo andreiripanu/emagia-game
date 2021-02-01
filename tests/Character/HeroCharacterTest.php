@@ -46,7 +46,7 @@ class HeroCharacterTest extends TestCase
     }
   }
 
-  public function testAllGetters()
+  public function testAllGetters(): void
   {
     $this->assertEquals($this->stats['name'], $this->character->getName());
     $this->assertEquals($this->stats['health'], $this->character->getHealth());
@@ -57,7 +57,7 @@ class HeroCharacterTest extends TestCase
     $this->assertCount(2, $this->character->getSkills());
   }
 
-  public function testRemoveSkill()
+  public function testRemoveSkill(): void
   {
     $this->character->removeSkill($this->skills[0]);
 
