@@ -13,6 +13,9 @@
     "php": ">=7.4.14",
     "symfony/yaml": "^5.2"
   },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5"
+  },
   "config": {
     "optimize-autoloader": true,
     "preferred-install": {
@@ -23,6 +26,11 @@
   "autoload": {
     "psr-4": {
       "Arcsym\\Emagia\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Arcsym\\Emagia\\Tests\\": "tests/"
     }
   }
 }
