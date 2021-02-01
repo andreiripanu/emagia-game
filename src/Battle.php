@@ -170,7 +170,7 @@ class Battle
    * @param string $action
    * @return int
    */
-  private function damageGeneratedBySkill(int $damage, BaseCharacter $character, string $action)
+  private function damageGeneratedBySkill(int $damage, BaseCharacter $character, string $action): int
   {
     if($character instanceof CharacterSkillInterface) {
       foreach ($character->getSkills() as $skill) {
